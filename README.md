@@ -1,4 +1,4 @@
-# CNN-DL-MRI-water-fat-separation-
+# CNN-DL-MRI-water-fat-separation
 
 $./deepMedicRun -h
 
