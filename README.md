@@ -12,4 +12,5 @@ hello.py
 ```nvidia-docker build -t deep-image-prior ```
 nn\\
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+
+<img src="https://github.com/RaminJafari/DL-MRI-Water-Fat-Separation/blob/master/network.png" alt="network" width="400" height="800" text-align: center>
