@@ -18,5 +18,5 @@ To run the code, please download all the files into a folder, make sure all the 
 
 ```CUDA_VISIBLE_DEVICES=5 python main.py input_data.mat output_data.mat```
 
-To plot results in MATLAB run ***run_results.m*
+To plot results in MATLAB run **run_results.m**
 
