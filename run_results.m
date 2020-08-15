@@ -1,7 +1,7 @@
 
 clear
 close all
-s=load('G:\2019\DL\publication_results\paper\1st_revision\github\output_data_github4_clean.mat');
+s=load('output_data.mat');
 
 s.test_pd = permute(s.test_pd,[2 3 1 4]);
 s.test_gt = permute(s.test_gt,[2 3 1 4]);
