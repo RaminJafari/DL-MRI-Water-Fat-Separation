@@ -97,38 +97,26 @@ def network(input_train_tm_tens,input_train_tp_tens, output_train_t_tens, dfat_t
 
  cc1 = Conv2D(12, kernel_size=(kernel_size, kernel_size), activation = 'sigmoid', padding = 'same', kernel_initializer = 'glorot_uniform')(input_train_tp_tens)
  cc1 = BatchNormalization()(cc1)
-# cc1 = Conv2D(12,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (cc1)
-# cc1 = BatchNormalization()(cc1)
  pp1 = MaxPooling2D((2, 2)) (cc1)
 
  cc2 = Conv2D(24,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (pp1)
-# cc2 = BatchNormalization()(cc2)
-# cc2 = Conv2D(24,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (cc2)
  cc2 = BatchNormalization()(cc2)
  pp2 = MaxPooling2D((2, 2))(cc2)
 
  cc3 = Conv2D(48,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (pp2)
-# cc3 = BatchNormalization()(cc3)
-# cc3 = Conv2D(48,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (cc3)
  cc3 = BatchNormalization()(cc3)
  pp3 = MaxPooling2D((2, 2)) (cc3)
 
  cc4 = Conv2D(96,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (pp3)
-# cc4 = BatchNormalization()(cc4)
-# cc4 = Conv2D(96,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (cc4)
  cc4 = BatchNormalization()(cc4)
  pp4 = MaxPooling2D((2, 2)) (cc4)
 
  cc5 = Conv2D(192,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (pp4)
  cc5 = BatchNormalization()(cc5)
-# cc5 = Conv2D(192,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (cc5)
-# cc5 = BatchNormalization()(cc5)
  pp5 = MaxPooling2D((2, 2)) (cc5)
 
  cc6 = Conv2D(384,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (pp5)
  cc6 = BatchNormalization()(cc6)
- #cc6 = Conv2D(384,kernel_size=(kernel_size, kernel_size), activation='sigmoid', kernel_initializer='glorot_uniform', padding='same') (cc6)
- #cc6 = BatchNormalization()(cc6)
  cc6 = UpSampling2D(size=(2, 2), data_format=None) (cc6)
 
  uu7 = Conv2DTranspose(192,kernel_size=(kernel_size, kernel_size), strides=(1, 1), padding='same') (cc6)
