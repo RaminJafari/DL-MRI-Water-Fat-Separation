@@ -7,7 +7,7 @@ https://arxiv.org/abs/2004.07923
 
 
 <p align="center">
-  <img src="https://github.com/RaminJafari/DL-MRI-Water-Fat-Separation/blob/master/fig1.tif" width="400" height="800" />
+  <img src="https://github.com/RaminJafari/DL-MRI-Water-Fat-Separation/blob/master/network.png" width="400" height="800" />
 </p>
 
 
