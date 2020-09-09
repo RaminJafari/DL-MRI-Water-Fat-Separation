@@ -27,10 +27,10 @@ gt = cat(4,water_abs_gt.*mask,fat_abs_gt.*mask,water_phs_gt.*mask,fat_phs_gt.*ma
 slc = 22;
 figure;
 subplot(221)
-imshow([gt(:,:,slc,1) pd(:,:,slc,1)])
+imshow([abs(gt(:,:,slc,1)) abs(pd(:,:,slc,1))])
 title('Water (Reference vs NTD)')
 subplot(222)
-imshow([gt(:,:,slc,2) pd(:,:,slc,2)])
+imshow([abs(gt(:,:,slc,2)) abs(pd(:,:,slc,2))])
 title('Fat (Reference vs NTD)')
 subplot(223)
 imshow([gt(:,:,slc,5) pd(:,:,slc,5)])
