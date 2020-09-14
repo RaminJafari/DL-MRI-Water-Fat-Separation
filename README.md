@@ -1,6 +1,6 @@
 # CNN-DL-MRI-water-fat-separation
 
-This code solves the optimization problem of water/fat separation in MRI by reconstrucitng water, fat, field, and R2* from input complex GRE data with 6 echoes using No-Training Deep Neural Networks (NTD) method. For details please see:
+This code solves the optimization problem of water/fat separation in MRI by reconstrucitng water, fat, field, and R2* from input complex GRE data with 6 echoes using No-Training Deep Neural Network (NTD) method. For details please see:
 https://arxiv.org/abs/2004.07923
 
 
@@ -16,7 +16,7 @@ https://arxiv.org/abs/2004.07923
 Download input_data.mat:
 https://wcm.box.com/s/b1fiikn3shqy44v3eewfia8unit9ybse
 
-To run the code, please download all the files into a folder, make sure all the libraries listed in **main.py** exist and run:
+To run the code, download all the files into a folder, make sure all the libraries listed in **main.py** exist and run:
 
 ```CUDA_VISIBLE_DEVICES=5 python main.py input_data.mat output_data.mat```
 
