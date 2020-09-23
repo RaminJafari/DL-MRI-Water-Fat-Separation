@@ -1,6 +1,6 @@
 # CNN-DL-MRI-water-fat-separation
 
-This code solves the optimization problem of water/fat separation in MRI by reconstrucitng water, fat, field, and R2* from input complex GRE data with 6 echoes using No-Training Deep Neural Network (NTD) method. For details please see:
+This code solves the optimization problem of water/fat separation in MRI by reconstructing water, fat, field, and R2* from input complex GRE data with 6 echoes using No-Training Deep Neural Network (NTD) method. For details please see:
 https://arxiv.org/abs/2004.07923
 
 
