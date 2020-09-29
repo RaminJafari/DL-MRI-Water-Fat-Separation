@@ -18,7 +18,7 @@ https://wcm.box.com/s/b1fiikn3shqy44v3eewfia8unit9ybse
 
 To run the code, download all the files into a folder, make sure all the libraries listed in **main.py** exist and run:
 
-```CUDA_VISIBLE_DEVICES=5 python main.py input_data.mat output_data.mat```
+```CUDA_VISIBLE_DEVICES=0 python main.py input_data.mat output_data.mat```
 
 To plot results in MATLAB run **run_results.m**
 
