@@ -1,7 +1,7 @@
 '''
 author: ramin jafari (rj259@cornell.edu)
 8/10/2020
-https://arxiv.org/abs/2004.07923
+https://doi.org/10.1002/mrm.28546
 '''
 #!/usr/bin/env python3
 #!/usr/bin/env python2
